@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+body{
+  background-image: radial-gradient(#2f3976,#232b59,#171c3a);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-image: url("./assets/backgame.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 600px;
+  height: 700px;
+  margin: 20px auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+#input-1{
+  position: absolute;
+  width: 90px;
+  top: 354px;
+  left: 257px;
+  background: none;
+  border: none;
+  outline: none;
+  color: #FFEC5F;
+  font-size: 25px;
+  text-align: center;
+
 }
 
-.App-link {
-  color: #61dafb;
+::placeholder{
+  font-size: 10px;
+  color: #80CEEA;
+  opacity: .5;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-2{
+  position: absolute;
+  bottom:223px;
+  left:263px;
+  background: none;
+  border: none;
+  color:#80CEEA;
+  font-size: 20px;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+.input-2:hover{
+  color: #E375AC;
+}
+.form p{
+  position: absolute;
+  bottom: 50px;
+  color:#FFEC5F;
+  font-size: 40px;
+  font-weight: bold;
+  left:200px;
+  bottom: 30px;
+}
+.form h3{
+  position: absolute;
+  color:#FFEC5F ;
+  font-size: 14px;
+  left:215px;
+  bottom: 255px;
+}
+.form button{
+  position: absolute;
+  background-color: #E375AC;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  right: 190.5px;
+  bottom: 154.5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+.form button:hover{
+  background-color: #80CEEA;
+}
+.form span{
+  color:#ed80b7;
+  font-size: 24px;
+}
+#try{
+  position: absolute;
+  bottom: 50px;
+  color:#FFEC5F;
+  font-size: 23px;
+  font-weight: bold;
+  left:170px;
+  bottom: 30px;
+  text-align: center;
 }
